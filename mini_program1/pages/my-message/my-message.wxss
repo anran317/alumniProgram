@@ -1,0 +1,15 @@
+
+
+.my_section1{
+  box-sizing: border-box;
+  font-size: 12px;
+  display: flex;
+  color:forestgreen;
+  
+}
+.my_section2{
+  box-sizing: border-box;
+  font-size: 10px;
+  display: flex;
+  color: #7f8389;
+}

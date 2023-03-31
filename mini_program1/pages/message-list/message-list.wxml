@@ -1,0 +1,16 @@
+<!-- 自定义单选/多选/全选实现删除功能 -->
+<view class="item-box">
+  <view class="items">
+    <view wx:for="{{list}}" wx:key="{{index}}" class="item">
+      <view class='msg' style="{{item.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+        <view class="inner txt">{{item.txt}}</view>
+        
+        <view class="inner del">
+          <span class="section1" data-index="{{index}}" bindtap="mpAlert1">同意</span>
+          <span class="section2" data-index="{{index}}" bindtap="mpAlert2">拒绝</span>
+          <span class="delete" data-index="{{index}}" bindtap="delItem">删除</span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="page sharing-container">
+
+<view class="weui-cells">
+          <navigator url="" bindtap="jump1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+              <view class="weui-cell__bd" font-weight="bold">计算机科学与技术学院</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
+          <navigator url="" bindtap="jump2" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+              <view class="weui-cell__bd" font-weight="bold">软件工程部门</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
+</view>     
+</view>

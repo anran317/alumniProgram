@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/relation-main/relation-main",
+    "pages/map/map",
+    "pages/mine/mine",
+    "pages/edit-mine/edit-mine",
+    "pages/sharing/sharing",
+    "pages/sharingtime/sharingtime",
+    "pages/nearby/nearby",
+    "pages/sharingaccuracy/sharingaccuracy",
+    "pages/footprint/footprint",
+    "pages/sharingtime1/sharingtime1",
+    "pages/sharing/share-accuracy/share-accuracy",
+    "pages/share-accuracy/share-accuracy",
+    "pages/share-time/share-time",
+    "pages/footprint-a/footprint-a",
+    "pages/message/message",
+    "pages/message-list/message-list",
+    "pages/my-message/my-message"
+  ],
+  "tabBar": {
+    "selectedColor": "#13227a",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "关系",
+        "pagePath": "pages/relation-main/relation-main",
+        "iconPath": "icons/relation.png",
+        "selectedIconPath": "icons/relation-.png"
+      },
+      
+      {
+        "text": "附近的人",
+        "pagePath": "pages/nearby/nearby",
+        "iconPath": "icons/group.png",
+        "selectedIconPath": "icons/group.png"
+      },
+      {
+        "text": "共享设置",
+        "pagePath": "pages/sharing/sharing",
+        "iconPath": "icons/relation.png",
+        "selectedIconPath": "icons/relation-.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/message/message",
+        "iconPath": "icons/msg-1.png",
+        "selectedIconPath": "icons/msg-1.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user-.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "点击确认"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

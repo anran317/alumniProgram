@@ -1,0 +1,35 @@
+<view class="page index-container">
+    <!-- <view wx:if="{{!hasLoggedIn}}" bindtap="login">
+      <text>请登录</text>
+
+    </view>
+    <view wx:if="{{hasLoggedIn}}"> -->
+        <view class="weui-panel">
+            <view class="weui-panel__bd card-container">
+                <card-default id="card-default" userId="{{userInfo._id}}"></card-default>
+            </view>
+        </view>
+        
+        <view class="weui-panel">
+            <view class="weui-panel_bd">
+            
+            </view>
+        </view>
+        
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-grids">
+                    <navigator bindtap="scanCode" url="" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/icons/scan.png"/>
+                        <view class="weui-grid__label">扫一扫</view>
+                    </navigator>
+                    <!-- <navigator url="/pages/card-detail/card-detail" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/preview.png" />
+                        <view class="weui-grid__label">预览</view>
+                    </navigator> -->
+                    
+                </view>
+            </view>
+        </view>
+    <!-- </view> -->
+</view>

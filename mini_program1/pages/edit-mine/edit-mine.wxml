@@ -1,0 +1,84 @@
+<!--pages/edit-mine/edit-mine.wxml-->
+<view class="page eidt-company-info-container">
+    <view class="weui-panel">
+        <view class="weui-navigation-bar">
+            <view class="weui-navigation-bar__placeholder"></view>
+            <view class="weui-navigation-bar__inner">
+            <view class='weui-navigation-bar__left'>
+                <view class="weui-navigation-bar__buttons">
+                <view aria-role="button" aria-label="返回" bindtap="jump" class="weui-navigation-bar__button weui-navigation-bar__btn_goback weui-wa-hotarea"></view>
+                </view>
+            </view>
+            </view>
+        </view>
+
+        <view class='weui-navigation-bar__center'>
+            <view aria-role="img"></view>
+        </view>
+        <text></text>
+
+        <view class='weui-navigation-bar__right'></view>
+    </view>
+
+    <view class="weui-panel__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入姓名" />
+                </view>
+            </view>
+                
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">联系电话</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入联系电话" />
+                </view>
+            </view>
+
+            <navigator url="/pages/map/map" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">学部</view>
+                </view>
+                <view class="weui-cell__bd weui-cell_primary">
+                    <view>请选择所属学部</view>
+                </view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+
+            <navigator url="/pages/map/map" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">专业</view>
+                </view>
+                <view class="weui-cell__bd weui-cell_primary">                        
+                    <view>请选择专业</view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+
+            <navigator url="/pages/map/map" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">年级</view>
+                </view>
+                <view class="weui-cell__bd weui-cell_primary">
+                    <view>请选择所属年级</view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+    <view class="weui-flex .btn-container">
+        <view class="weui-flex__item btn-view">
+            <view class="placeholder">
+                <button type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap= "gotoPage">
+                    保存
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

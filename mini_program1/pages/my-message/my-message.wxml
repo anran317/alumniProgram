@@ -1,0 +1,24 @@
+
+
+<view class="container">
+  <navigator class="weui-cell weui-cell_access">
+         <view class="weui-cell__bd" font-weight="bold">崔梦珊【计算机科学与技术】</view>
+         <view class="my_section1"><button type="primary">已通过</button></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access">
+         <view class="weui-cell__bd" font-weight="bold">李一【计算机科学与技术】</view>
+         <view class="my_section1"><button type="primary">已通过</button></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access">
+         <view class="weui-cell__bd" font-weight="bold">张三【历史】</view>
+         <view class="my_section1"><button type="primary">已通过</button></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access">
+         <view class="weui-cell__bd" font-weight="bold">李四【软件工程】</view>
+        <view class="my_section2"><button >申请中</button></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access">
+         <view class="weui-cell__bd" font-weight="bold">陈五【统计】</view>
+        <view class="my_section2"><button >申请中</button></view>
+  </navigator>
+</view>

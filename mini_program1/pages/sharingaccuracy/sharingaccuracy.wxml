@@ -1,0 +1,21 @@
+<!-- 
+  radio 单选框
+  1 radio标签 必须要和 父元素 radio-group 来使用
+  2 value 选中的单选框的值
+  3 需要给 radio-group 绑定 change 事件
+  4 需要在页面中显示 选中的值
+ -->
+ <view class="page-section">
+    <view class="page-section-title">当前选择的设置：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+
+          <view class="weui-cell__hd">
+            <radio value="{{item.value}}" checked="true"/>
+          </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </label>
+      </radio-group>
+    </view>
+  </view>

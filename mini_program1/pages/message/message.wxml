@@ -1,0 +1,20 @@
+<view class="page sharing-container">
+
+      <view class="weui-cells">
+            <navigator class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd" font-weight="bold">接收校友的信息共享申请</view>
+                <view><switch></switch></view>
+             </navigator>
+                <navigator bindtap="jump1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd" font-weight="bold">消息列表</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+
+                <navigator  bindtap="jump2" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd" font-weight="bold">我的申请</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+
+                
+      </view>     
+  </view>

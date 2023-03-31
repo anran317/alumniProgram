@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText":"共享位置精确度设置",
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "black"
+}

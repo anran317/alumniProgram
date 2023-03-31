@@ -1,0 +1,24 @@
+<view class="page sharing-container">
+
+      <view class="weui-cells">
+            <navigator class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd" font-weight="bold">共享时是否显示真实姓名</view>
+                <view><switch></switch></view>
+             </navigator>
+                <navigator url="" bindtap="jump1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd" font-weight="bold">位置自动采集时间间隔</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+
+                <navigator url="" bindtap="jump2" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd" font-weight="bold">共享位置精确度</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+
+                <navigator url="" bindtap="jump3" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd" font-weight="bold">历史足迹管理</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    <view bindtap='jump'></view>
+                </navigator>
+      </view>     
+  </view>

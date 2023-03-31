@@ -1,0 +1,17 @@
+<view class="title">足迹设置</view>
+<view class="container">
+  <view class="order-mes">
+    <checkbox-group class="table">
+      <view class="tr">
+        <view class="th">历史足迹</view>
+        <view class="th last">设置</view>
+      </view>
+      <view class="tr" wx:for="{{orders}}" wx:key="id">
+        <view class="td first">
+          <view class="interval">{{item.date.interval}}</view>
+        </view>
+        <view class="td last {{item.setting.checked ? '' : 'gray'}}"><checkbox value="{{item.setting.value}}" checked="{{item.setting.checked}}" bindtap="select" data-index="{{index}}" data-type="setting"  />{{item.setting.checked ? '显示' : '隐藏'}}</view>
+      </view>
+    </checkbox-group>
+  </view>
+</view>

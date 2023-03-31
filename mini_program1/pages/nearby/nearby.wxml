@@ -1,0 +1,46 @@
+<!--pages/nearby/nearby.wxml-->
+<view class="home">
+  <view class="location">
+      <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="17" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+  </view>
+  <scroll-view class="people" scroll-y="true" enable-flex="true">
+
+    <view class="person" wx:for="{{nearby_usr}}" wx:key="*this">
+
+      <view class="usr_img">
+        <view class="cover">
+          <image src="{{item.url}}" mode="aspectFill" bindtap="dialog" data-index="{{index}}"></image>
+        </view>
+      </view>
+
+      <view class="name">
+        <text class="usr">{{item.usr}}</text>
+      </view>
+
+      <view class="distance">
+        <text class="usr">{{item.distance}}</text>
+      </view>
+
+    </view>
+  </scroll-view>
+  <view class="dialog" style="display: {{dialog.flag?'flex':'none'}};">
+    <view class="img">
+      <image style="width: 100%;height: 100%;"src="/assets/images/4.jpg" mode="aspectFill"></image>
+    </view>
+    <view class="usr">
+      <view class="name">{{dialog.name}}</view>
+      <view class="distance">距离 {{dialog.distance}}</view>
+    </view>
+    <view class="info">
+      <textarea placeholder="输入发送内容"></textarea>
+    </view>
+    <view class="button">
+      <button bindtap="cancel">取消</button>
+      <button bindtap="send">发送</button>
+    </view>
+  </view>
+  <view class="success" style="display: {{success.flag?'flex':'none'}};">
+    <view class="check"></view>
+    <view class="check_info">已成功发送</view>
+  </view>
+</view>

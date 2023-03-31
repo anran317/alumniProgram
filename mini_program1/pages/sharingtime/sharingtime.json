@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText":"共享设置",
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "black"
+}
